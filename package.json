@@ -1,0 +1,41 @@
+{
+  "name": "autocreate",
+  "displayName": "auto create",
+  "description": "Auto create file structure",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  
+ "contributes": {
+    "commands": [
+        {
+            "command": "extension.createProjectStructure",
+            "title": "Create Project Structure"
+        }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.99.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "handlebars": "^4.7.8"
+  }
+  
+}
